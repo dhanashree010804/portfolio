@@ -96,6 +96,7 @@
             max-width: 1200px;
             margin: 0 auto;
             padding: 0 20px;
+            justify-content: space-between;
         }
         
         .section {
@@ -200,7 +201,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 20px 0;
+            padding: 5px 0;
         }
         
         .logo {
