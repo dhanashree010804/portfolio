@@ -216,12 +216,15 @@ a:hover {
         justify-content: space-around;
     }
     .hero-subtitle {
-    display: -webkit-box;
-    -webkit-line-clamp: 2; /* Show only 2 lines */
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    display: none;
   }
+  .hero-quote {
+  display: block;
+  font-style: italic;
+  font-weight: bold;
+  color: #333; /* greyish black */
+}
+
 }
 
 .hero {
@@ -230,7 +233,7 @@ a:hover {
     align-items: center;
     background-color: var(--light-bg);
     position: relative;
-    /* overflow: hidden; */
+    /*overflow: hidden; */
 }
 
 .hero:before {
@@ -269,6 +272,12 @@ a:hover {
     color: var(--light-text);
 }
 
+.hero-quote {
+  display: block;
+  font-style: italic;
+  font-weight: bold;
+  color: #333; /* greyish black */
+}
 .hero-buttons {
     display: flex;
     gap: 15px;
