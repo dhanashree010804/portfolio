@@ -50,8 +50,8 @@
     --accent-color: #f97316;         /* Highlight/underline */
     --text-color: #111827;           /* Main text */
     --light-text: #6b7280;           /* Muted/paragraph text */
-    --background: #f9fafb;           /* Body background */
-    --light-bg: #ffffff;             /* Cards/section backgrounds */
+    --background: #f9fafb;     /* Body background */
+    --light-bg: #ffffff;              /* Cards/section backgrounds */
     --button-resume-bg: #fde2cf;     /* Peach resume button */
     --button-contact-bg: #a0caed;    /* Light blue contact button */
     --button-text-color: #1f2937;
