@@ -1,6 +1,23 @@
 document.addEventListener('DOMContentLoaded', function () {
     // Header scroll shrink effect
     const header = document.querySelector("header");
+
+    // About Me "View More" toggle (for mobile screens)
+const aboutText = document.getElementById("aboutText");
+if (aboutText) {
+    const toggleBtn = aboutText.querySelector(".view-toggle");
+
+    if (toggleBtn) {
+        toggleBtn.addEventListener("click", function () {
+            const isCollapsed = aboutText.classList.contains("collapsed");
+            aboutText.classList.toggle("collapsed", !isCollapsed);
+            aboutText.classList.toggle("expanded", isCollapsed);
+            toggleBtn.textContent = isCollapsed ? "View Less" : "View More";
+        });
+    }
+}
+
+
     window.addEventListener("scroll", function () {
         header.classList.toggle("header-scrolled", window.scrollY > 50);
     });

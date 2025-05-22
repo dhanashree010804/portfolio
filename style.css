@@ -1047,3 +1047,30 @@ footer {
     }
 }
 
+/* About Section */
+
+.about-text.expanded .more-content {
+  display: block;
+}
+
+.view-toggle {
+  display: none;
+  cursor: pointer;
+  font-weight: bold;
+  color: var(--primary-color, #007bff);
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* Show toggle only on smaller screens */
+@media (max-width: 768px) {
+  .view-toggle {
+    display: block;
+  }
+  .about-text.collapsed .more-content {
+    display: none;
+  }
+  .more-content {
+  display: none;
+}
+}
