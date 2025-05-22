@@ -6,6 +6,7 @@
     <title>Your Full Name - Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
 </head>
 <body>
     <!-- Header -->
@@ -486,15 +487,31 @@ AWS Amplify simplifies backend management, enabling easy deployment and scalabil
             <h2 class="section-title">Contact Me</h2>
             <div class="contact-container">
                 <div class="contact-info">
+                    <div class="badge-base LI-profile-badge"
+                        data-locale="en_US"
+                        data-size="large"
+                        data-theme="light"
+                        data-type="VERTICAL"
+                        data-vanity="dhanashreegiriya"
+                        data-version="v1">                
+                    </div>
+                    <br>
                     <h3>Get In Touch</h3>
                     <ul>
-                        <li><img src="/api/placeholder/20/20" alt="Email" class="contact-logo"> your.email@example.com</li>
-                        <li><img src="/api/placeholder/20/20" alt="LinkedIn" class="contact-logo"> linkedin.com/in/yourprofile</li>
-                        <li><img src="/api/placeholder/20/20" alt="GitHub" class="contact-logo"> github.com/yourusername</li>
-                        <li><img src="/api/placeholder/20/20" alt="Location" class="contact-logo"> Your Location</li>
+                        <li>
+                            
+                            <a href="mailto:dhanashreegiriya2013@gmail.com">
+                                <img src="/logos/mail.jpg" alt="Email" class="contact-logo">
+                                dhanashreegiriya2013@gmail.com</a>
+                        </li>
+                        <li>
+                            
+                            <a href="https://github.com/dhanashree010804" target="_blank">
+                                <img src="/logos/github.jpg" alt="Github" class="contact-logo">
+                                github.com/dhanashree010804</a>
+                        </li>
                     </ul>
                 </div>
-
      
                 <div class="contact-form">
                     <h3>Send Message</h3>
@@ -508,9 +525,10 @@ AWS Amplify simplifies backend management, enabling easy deployment and scalabil
                         <div class="form-group">
                             <input type="text" name="subject" class="form-control" placeholder="Subject" required>
                         </div>
-                        <div class="form-group" name="message">
+                        <div class="form-group" name ="message">
                             <textarea class="form-control" placeholder="Your Message" required></textarea>
                         </div>
+
                         <button type="submit" class="btn">Send Message</button>
                         <input type="hidden" name="_template" value="box">
                         <input type="hidden" name="_autoresponse" value="Thank you for reaching out! We'll get back to you soon.">
