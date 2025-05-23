@@ -139,7 +139,7 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     });
   });
-
+// Experience section "View More" toggle
   document.addEventListener("DOMContentLoaded", function () {
     const toggleBtns = document.querySelectorAll(".toggle-experience");
 
