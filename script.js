@@ -114,3 +114,8 @@ if (aboutText) {
         });
     });
 });
+document.getElementById("view-more-btn").addEventListener("click", function () {
+    const hiddenCards = document.querySelectorAll(".certification-card.hidden");
+    hiddenCards.forEach(card => card.classList.remove("hidden"));
+    this.style.display = "none"; // Hide the button after revealing all
+});

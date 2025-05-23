@@ -351,7 +351,7 @@ a:hover {
 }
 
 .btn-outline {
-    background: var(--button-contact-bg); 
+    background:#a7d8f0;
     color: var(--button-text-color);
     border: 2px solid transparent; 
 }
@@ -737,6 +737,50 @@ nav {
 .certification-info {
     color: var(--light-text);
     font-size: 0.9rem;
+}
+.certification-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%; /* Important to make button stick to bottom */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    background-color: #fff;
+}
+
+.certification-title {
+    margin: 0 0 10px 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.certification-info {
+    margin: 0 0 auto 0; /* Pushes button to bottom */
+    color: #666;
+    font-size: 14px;
+}
+
+.view-certificate {
+    align-self: flex-start; /* Optional: aligns button to left */
+    margin-top: 20px;
+}
+.hidden {
+    display: none;
+}
+
+#view-more-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #b3d9f5;
+    color: #000;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#view-more-btn:hover {
+    background-color: #a7d8f0;
 }
 
 /* Publications Section */
