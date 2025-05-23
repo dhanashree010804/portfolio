@@ -1129,3 +1129,39 @@ footer {
   display: none;
 }
 }
+
+/* Projects Section */
+/* Default styles */
+.description {
+  display: block;
+}
+
+.toggle-description {
+  display: none;
+}
+
+/* Mobile View Only */
+@media (max-width: 768px) {
+  .description {
+    display: none;
+    margin-top: 5px; /* Small space between title and description */
+  }
+
+  .description.show {
+    display: block;
+  }
+
+  .toggle-description {
+    display: block;
+    font-style: italic;
+    color: black;
+    text-decoration: underline;
+    cursor: pointer;
+    margin-top: 5px;  /* Reduced space between title and "View Description" */
+    margin-bottom: 15px; /* More space between "View Description" and project links */
+  }
+
+  .project-links {
+    margin-top: 10px;
+  }
+}

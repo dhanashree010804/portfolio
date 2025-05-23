@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Full Name - Portfolio</title>
+    <title>Dhanashree Giriya - Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
@@ -15,7 +15,11 @@
   <div class="container">
     <nav role="navigation" aria-label="Main Navigation">
       <!-- Logo -->
-      <a href="#" class="logo">Portfolio</a>
+      <a href="#" style="display: flex; align-items: center; text-decoration: none;">
+  <img src="logos/portfoliodg.png" alt="C" style="height: 40px; margin-right: 8px;">
+  <span style="font-size: 28px; font-weight: bold; color: #1a1a1a;">Portfolio</span>
+</a>
+
 
       <!-- Navigation Links -->
       <div class="nav-links" id="navLinks">
@@ -77,17 +81,17 @@
     </div>
     <div class="about-text collapsed" id="aboutText">
       <p>
-        Greetings! I am Dhanashree Giriya, a Committed and goal-oriented final-year Computer Science & Engineering student from Symbiosis Institute of Technology, Nagpur. With a strong foundation in software development and a growing expertise in AI, ML and cloud computing, I strive to build meaningful and scalable tech solutions that address real-world challenges and create lasting impact.
+        Greetings! I am Dhanashree Giriya, a <strong>Committed and goal-oriented final-year Computer Science & Engineering student from Symbiosis Institute of Technology</strong>, Nagpur. With a strong foundation in software development and a <strong>growing expertise in AI, ML and cloud computing</strong>, I strive to build meaningful and scalable tech solutions that address real-world challenges and create lasting impact.
       </p>
       
       <div class="more-content">
-        <p>I have worked on diverse projects, including vehicle number plate recognition systems, cloud-based Learning Management Systems, and social media automation tools. I’m currently learning about Generative AI and AI agents, exploring how they can be applied to solve real-world problems through creativity and intelligent decision-making. I am actively preparing for Competitive Programming and Data Structures and Algorithms to further strengthen my problem-solving skills. 
+        <p>I have worked on diverse projects, including vehicle number plate recognition systems, cloud-based Learning Management Systems, and social media automation tools. I’m currently <strong>learning about Generative AI and AI agents</strong>, exploring how they can be applied to solve real-world problems through creativity and intelligent decision-making. I am actively <strong>preparing for Competitive Programming and Data Structures and Algorithms </strong>to further strengthen my problem-solving skills. 
         </p>
         <p>
-            Alongside my academic journey, I actively engage in social initiatives, having contributed to awareness campaigns and content creation with Avabodh Foundation. I find joy in reading fiction, which fuels my imagination and creativity. Cooking is another passion of mine—it’s my favorite way to unwind and experiment with new ideas.
+            Alongside my academic journey, I <strong>actively engage in social initiatives</strong>, having contributed to awareness campaigns and content creation with Avabodh Foundation. I find joy in reading fiction, which fuels my imagination and creativity. Cooking is another passion of mine—it’s my favorite way to unwind and experiment with new ideas.
         </p>
         <p>
-            Let’s connect and explore opportunities to collaborate on tech-driven innovations!
+            <strong>Let’s connect and explore opportunities to collaborate on tech-driven innovations!</strong>
         </p>
       </div>
       <div class="view-toggle">View More</div>
@@ -164,12 +168,14 @@
                     <div class="project-info">
                         <i class="fas fa-code"></i>
                         <h3 class="project-title">Authorized Vehicle Number Plate Recognition System</h3>
-                        <p class="project-desc">A real-time system that detects vehicles and their number plates from camera footage using frame extraction and YOLOv8. It applies OCR to recognize the number plate text and verifies it against a database for authorization.</p>
+                        <p class="description">A real-time system that detects vehicles and their number plates from camera footage using frame extraction and YOLOv8. It applies OCR to recognize the number plate text and verifies it against a database for authorization, enables automated gate control ensuring seamless and secure vehicle access.</p>
+                        <span class="toggle-description">View Description</span>
                         <div class="project-tech">
                             <span class="tech-tag">Optical Character Recognition</span>
                             <span class="tech-tag">YOLOv8</span>
                             <span class="tech-tag">Python</span>
                             <span class="tech-tag">DBMS</span>
+                            <span class="tech-tag">Video Processing</span>
                         </div>
                         <div class="project-links">
                             <a href="https://github.com/dhanashree010804/Authorized-VNPR-System"><i class="fab fa-github"></i> GitHub</a>
@@ -180,17 +186,21 @@
                 <!-- Project 2 -->
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="projects/amplify.png" alt="">
+                        <img src="projects/cloud.png" alt="">
                     </div>
                     <div class="project-info">
                         <i class="fas fa-mobile-alt"></i>
                         <h3 class="project-title">Cloud-Powered Travel Diary – React & AWS Amplify</h3>
-                        <p class="project-desc">This full-stack travel diary app uses React.js and AWS Amplify, allowing users to log in, add travel entries (place, description, image), and store data in DynamoDB.
+                        <p class="description">This full-stack travel diary app uses React.js and AWS Amplify, allowing users to log in, add travel entries (place, description, image), and store data in DynamoDB.
 AWS Amplify simplifies backend management, enabling easy deployment and scalability while enhancing the user experience.</p>
+                        <span class="toggle-description">View Description</span>
                         <div class="project-tech">
                             <span class="tech-tag">React Js</span>
                             <span class="tech-tag">AWS Amplify</span>
-                            
+                            <span class="tech-tag">AWS Cognito</span>
+                            <span class="tech-tag">DynamoDB</span>
+                            <span class="tech-tag">GraphQL API</span>
+                            <span class="tech-tag">S3 Bucket</span>
                         </div>
                         <div class="project-links">
                             <a href="https://github.com/dhanashree010804/Amplify_React_Fullstack_App"><i class="fab fa-github"></i> GitHub</a>
@@ -201,12 +211,14 @@ AWS Amplify simplifies backend management, enabling easy deployment and scalabil
                 <!-- Project 3 -->
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="projects/resume.png" alt="">
+                        <img src="projects/resu.png" alt="">
                     </div>
                     <div class="project-info">
                         <i class="fas fa-chart-bar"></i>
                         <h3 class="project-title">AI Based Resume Analyzer</h3>
-                        <p class="project-desc">An AI-powered web application that analyzes resumes, offers enhancement suggestions, rewrites bullet points, scores structure & formatting, and even estimates future career paths — all powered by Google Gemini and NLP.</p>
+                        <p class="description">An AI-powered web application that analyzes resumes, offers enhancement suggestions, rewrites bullet points, scores structure & formatting, and even estimates future career paths — all powered by Google Gemini and NLP. It provides personalized insights to help users stand out in competitive job markets and supports one-click resume downloads in multiple professional templates.
+                        </p>
+                        <span class="toggle-description">View Description</span>
                         <div class="project-tech">
                             <span class="tech-tag">Python</span>
                             <span class="tech-tag">spaCy</span>

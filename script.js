@@ -128,4 +128,14 @@ const viewBtn = document.getElementById("view-more-btn");
     viewBtn.textContent = isExpanded ? "View More" : "View Less";
     isExpanded = !isExpanded;
   });
+document.addEventListener("DOMContentLoaded", function () {
+    const toggles = document.querySelectorAll(".toggle-description");
 
+    toggles.forEach(toggle => {
+      toggle.addEventListener("click", function () {
+        const desc = this.previousElementSibling;
+        desc.classList.toggle("show");
+        this.textContent = desc.classList.contains("show") ? "Hide Description" : "View Description";
+      });
+    });
+  });
