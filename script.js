@@ -114,8 +114,18 @@ if (aboutText) {
         });
     });
 });
-document.getElementById("view-more-btn").addEventListener("click", function () {
+
+const viewBtn = document.getElementById("view-more-btn");
+  let isExpanded = false;
+
+  viewBtn.addEventListener("click", () => {
     const hiddenCards = document.querySelectorAll(".certification-card.hidden");
-    hiddenCards.forEach(card => card.classList.remove("hidden"));
-    this.style.display = "none"; // Hide the button after revealing all
-});
+
+    hiddenCards.forEach(card => {
+      card.style.display = isExpanded ? "none" : "block";
+    });
+
+    viewBtn.textContent = isExpanded ? "View More" : "View Less";
+    isExpanded = !isExpanded;
+  });
+

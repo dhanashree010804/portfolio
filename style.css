@@ -766,21 +766,32 @@ nav {
     margin-top: 20px;
 }
 .hidden {
-    display: none;
+  display: none;
+}
+
+.button-wrapper {
+  text-align: center;
+  margin-top: 20px;
+}
+.button-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
 }
 
 #view-more-btn {
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #b3d9f5;
-    color: #000;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
+  padding: 12px 32px;
+  font-size: 16px;
+  background-color: #fde2cf;
+  color: #000;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 #view-more-btn:hover {
-    background-color: #a7d8f0;
+  background-color: var(--accent-color);
 }
 
 /* Publications Section */
