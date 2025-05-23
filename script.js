@@ -139,3 +139,16 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     });
   });
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const toggleBtns = document.querySelectorAll(".toggle-experience");
+
+    toggleBtns.forEach(toggle => {
+      toggle.addEventListener("click", function () {
+        const description = this.previousElementSibling;
+        description.classList.toggle("show");
+        this.textContent = description.classList.contains("show") ? "Hide Description" : "View Description";
+      });
+    });
+  });
+

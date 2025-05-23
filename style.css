@@ -1165,3 +1165,49 @@ footer {
     margin-top: 10px;
   }
 }
+
+
+.experience-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.experience-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+.toggle-experience {
+  display: none;
+}
+/* Description toggle (mobile only) */
+@media (max-width: 768px) {
+  .experience-description {
+    display: none;
+    margin-top: 5px;
+  }
+
+  .experience-description.show {
+    display: block;
+  }
+
+  .toggle-experience {
+    display: block;
+    font-style: italic;
+    color: black;
+    text-decoration: underline;
+    cursor: pointer;
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+}
+/* Experience Role Logo */
+.experience-role-container {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* space between logo and title */
+}
+
+.role-logo {
+  width: 24px;   /* adjust size as needed */
+  height: 24px;
+  object-fit: contain;
+}
